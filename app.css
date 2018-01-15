@@ -1,33 +1,35 @@
 body {
   color : #231f20;
 }
-
-
+nav {
+  ;
+}
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  padding: 15px;
+  padding: 0px;
   margin: auto;
-  margin-bottom: 40x;
-  max-width: 650px;
+}
+ul li {
+  background-color: blue; 
 }
 nav ul li {
-  flex: 1;
-  max-width: 70px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  align-items: center;
+  width: 140px;
+  margin: 2px 2px 40px 2px;
   text-align: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Source Sans Pro';
-  height: 100px;
-  /* Ask Jules if the height of this adjustable to the text height */
-  line-height: 18px;
-  color: #FFC634;
+  height: 44px;
+  line-height: 20px;
+  color: #849097;
+  background-color: purple;
   transition: box-shadow 0.33s ease-out, color 0.33s ease-out;
   -webkit-transition: box-shadow 0.33s ease-out, color 0.33s ease-out; /* Safari */
-} 
+}
 nav ul li:not(.active) {
   background-color: white !important;
 }
@@ -36,29 +38,75 @@ nav ul li.active {
   color : white;
   border-radius: 2px;
 }
-h3 {
-  font-size: 22px;
+.category {
+  font-size: 28px;
+  line-height: 35px;
   margin: 0;
+  color: #a0262a;
 }
 ul {
   padding: 0;
   margin: 0;
 }
+.name {
+  font-style: italic;
+}
+.movie {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #DDC266;
+}
 p {
   padding-top: 0.1em;
-  margin: 1em 0;
+  margin: 10px 0;
 }
-main {
+#app {
+  width: 300px;
   
 }
-main img {
-  width: 100%;
+main {
+  height: 550px;
+}
+.imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 430px;
+} 
+.imgbox img { 
+  width: 95%;
 }
 
-@media screen and (min-width: 400px) {
-  main img {
-    float: right;
-    width: 45%;
+@media screen and (min-width: 500px) {
+  #app {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  nav {
+    max-width: 550px;
+    margins: auto;
+  }
+  main {
+    height: 530px;
+  }
+  main h3 {
+    line-height: 20px;
+    
+  }
+  .name {
+    margin-top: 100px;
+  }
+  .movie {
+    font-size: 2rem;
+  }
+  .imgbox {
+  display: block;
+  float: right;
+  width: 55%;
+} 
+  .imgbox img {
+    
   }
   h3 {
     padding-top: 38px;
