@@ -39,22 +39,31 @@ nav ul li.active {
   border-radius: 2px;
 }
 .category {
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
   margin: 0;
-  color: #a0262a;
+  color: #000;
 }
+
 ul {
   padding: 0;
   margin: 0;
 }
+
 .name {
-  font-style: italic;
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 700;
+  margin: 0;
+  color: #a0262a;
 }
+
 .movie {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #DDC266;
+  letter-spacing: 0.05em;
 }
 p {
   padding-top: 0.1em;
